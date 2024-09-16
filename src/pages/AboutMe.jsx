@@ -1,9 +1,8 @@
 import React from 'react'
-import './AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div className='about-me'>AboutMe</div>
+    <div className='flex flex-col justify-center items-center w-[100vw] h-[100vh]'>AboutMe</div>
   )
 }
 

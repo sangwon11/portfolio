@@ -1,9 +1,8 @@
 import React from 'react'
-import './Project.css';
 
 const Project = () => {
   return (
-    <div className='project'>Project</div>
+    <div className='flex flex-col justify-center items-center w-[100vw] h-[100vh]'>Project</div>
   )
 }
 
