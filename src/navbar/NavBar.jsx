@@ -8,9 +8,8 @@ const NavBar = () => {
       <div className='text-[40px] font-bold pl-[30px]'>PORTFOLIO</div>
       <div className='flex justify-between w-[500px] text-[30px] font-bold pr-[30px]'>
         <div>About Me</div>
-        <div>Git Hub</div>
-        <div>Skill</div>
         <div>Project</div>
+        <div>Contact</div>
       </div>
     </div>
     <Outlet/>
