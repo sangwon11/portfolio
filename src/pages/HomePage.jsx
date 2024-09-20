@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Project from './Project';
 import Contact from './Contact';
+import htmlIcon from '../assets/icons/htmlIcon.svg'
+import cssIcon from '../assets/icons/cssIcon.svg'
+import jsIcon from '../assets/icons/jsIcon.svg'
+import reactIcon from '../assets/icons/reactIcon.svg'
+import reduxIcon from '../assets/icons/reduxIcon.svg'
+import reactqueryIcon from '../assets/icons/reactqueryIcon.svg'
+import tailwindIcon from '../assets/icons/tailwindIcon.svg'
+import bootstrapIcon from '../assets/icons/bootstrapIcon.svg'
 
 const useFadeInOnScroll = () => {
   const elementRef = useRef(null);
@@ -60,12 +68,42 @@ const HomePage = () => {
             </div>
             <div className="text-[30px] font-extrabold">Skills</div>
             <div className="text-[30px] font-extrabold">
-              Laguage/Flamework/Library
+              Laguage/Library/Flamework
             </div>
-            <div className="text-[30px] font-extrabold">
-              HTMl,CSS JavaScript Tailwind Bootstrap React.js Redux React-Query
+            <div className='flex flex-wrap justify-between w-[480px] h-[300px]'>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={htmlIcon} alt="html icon" width={100} />
+                <div>HTML</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={cssIcon} alt="css icon" width={100} />
+                <div>CSS</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={jsIcon} alt="js icon" width={100} />
+                <div>Javascript</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={reactIcon} alt="react icon" width={100} />
+                <div>React.js</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={reduxIcon} alt="redux icon" width={100} />
+                <div>Redux</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={reactqueryIcon} alt="reactquery icon" width={100} height={100} />
+                <div>React-Query</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={tailwindIcon} alt="tailwind icon" width={100} />
+                <div>Tailwind CSS</div>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <img src={bootstrapIcon} alt="bootstrap icon" width={100} />
+                <div>Bootstrap</div>
+              </div>
             </div>
-            <div> 아이콘</div>
           </div>
         </div>
 
