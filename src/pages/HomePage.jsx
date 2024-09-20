@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Project from './Project';
 import Contact from './Contact';
 
-const HomePage = () => {
-  const textRef = useRef(null);
+const useFadeInOnScroll = () => {
+  const elementRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
@@ -17,28 +17,38 @@ const HomePage = () => {
           }
         });
       },
-      { threshold: 0.5 } // 요소의 절반이 화면에 보일 때 애니메이션 트리거
+      { threshold: 0.5 }
     );
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
     }
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
       }
     };
   }, []);
 
+  return { elementRef, isInView };
+};
+
+const HomePage = () => {
+  const { elementRef: homeRef, isInView: isHomeInView } = useFadeInOnScroll();
+  const { elementRef: projectRef, isInView: isProjectInView } = useFadeInOnScroll();
+  const { elementRef: contactRef, isInView: isContactInView } = useFadeInOnScroll();
+
   return (
     <div>
-      <main className="pt-16">
+      <main className="pt-10">
         <div
-          ref={textRef}
-          className={`flex justify-center items-center w-[100vw] h-[100vh] transition-opacity duration-1000 ease-in-out ${
-            isInView ? 'opacity-100' : 'opacity-0'
-          }`}
+          ref={homeRef}
+          style={{
+            transition: 'opacity 1s ease-in-out',
+            opacity: isHomeInView ? 1 : 0,
+          }}
+          className="flex justify-center items-center w-[100vw] h-[100vh]"
         >
           <div>
             <img className="w-[500px] h-[610px]" />
@@ -58,8 +68,26 @@ const HomePage = () => {
             <div> 아이콘</div>
           </div>
         </div>
-        <Project />
-        <Contact />
+
+        <div
+          ref={projectRef}
+          style={{
+            transition: 'opacity 1s ease-in-out',
+            opacity: isProjectInView ? 1 : 0,
+          }}
+        >
+          <Project />
+        </div>
+
+        <div
+          ref={contactRef}
+          style={{
+            transition: 'opacity 1s ease-in-out',
+            opacity: isContactInView ? 1 : 0,
+          }}
+        >
+          <Contact />
+        </div>
       </main>
     </div>
   );
