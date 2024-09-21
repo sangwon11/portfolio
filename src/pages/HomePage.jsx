@@ -68,7 +68,7 @@ const HomePage = () => {
             </div>
             <div className="text-[30px] font-extrabold">Skills</div>
             <div className="text-[30px] font-extrabold">
-              Laguage/Library/Flamework
+              Laguage/Library/Framework
             </div>
             <div className='flex flex-wrap justify-between w-[480px] h-[300px]'>
               <div className='flex flex-col items-center justify-center'>
