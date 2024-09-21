@@ -50,7 +50,8 @@ const HomePage = () => {
               </div>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={jsIcon} alt="js icon"  className='sm:w-[100px] w-[50px]' />
-                <div>Javascript</div>
+                <div className='sm:block hidden'>Javascript</div>
+                <div className='sm:hidden block'>JS</div>
               </div>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={reactIcon} alt="react icon"  className='sm:w-[100px] w-[50px]' />
@@ -62,15 +63,18 @@ const HomePage = () => {
               </div>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={reactqueryIcon} alt="reactquery icon"  className='sm:w-[100px] w-[50px] sm:h-[100px] h-[50px]' />
-                <div>React-Query</div>
+                <div className='sm:block hidden'>React-Query</div>
+                <div className='sm:hidden block'>R-Q</div>
               </div>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={tailwindIcon} alt="tailwind icon"  className='sm:w-[100px] w-[50px]' />
-                <div>Tailwind CSS</div>
+                <div className='sm:block hidden'>Tailwind CSS</div>
+                <div className='sm:hidden block'>Tailwind</div>
               </div>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={bootstrapIcon} alt="bootstrap icon" width={100} className='sm:w-[100px] w-[50px]' />
-                <div>Bootstrap</div>
+                <div className='sm:block hidden'>Bootstrap</div>
+                <div className='sm:hidden block'>B.S</div>
               </div>
             </div>
           </div>
