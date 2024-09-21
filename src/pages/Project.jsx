@@ -5,7 +5,7 @@ const Project = () => {
     <div className='flex flex-col justify-center items-center w-[100vw] h-[100vh]'>
       <div className='sm:w-[1100px] w-[350px] sm:h-[800px] h-[400px] flex flex-wrap justify-between items-center text-[25px] font-extrabold'>
         <div className='flex flex-col items-center justify-between sm:h-[350px] h-[200px] mb-10'>
-          <a href='https://weather-vibe.netlify.app/' target='_blank' className='flex justify-center items-center bg-weatherVibe-color rounded-xl text-[#fff] sm:w-[500px] w-[150px] sm:h-[300px] h-[150px] border-2'>
+          <a href='https://weather-vibe.netlify.app/' target='_blank' className='flex justify-center items-center bg-weatherVibe-color rounded-xl text-[#fff] text-center sm:w-[500px] w-[150px] sm:h-[300px] h-[150px] border-2'>
             Weather Vibe
           </a>
         </div>
