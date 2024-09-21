@@ -10,6 +10,11 @@ import reactqueryIcon from '../assets/icons/reactqueryIcon.svg'
 import tailwindIcon from '../assets/icons/tailwindIcon.svg'
 import bootstrapIcon from '../assets/icons/bootstrapIcon.svg'
 import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
+/*1.웹 반응형 완성
+  2.네비바 스크롤기능
+  3.추가스크롤 애니매이션
+  4.프로젝트 이미지
+*/
 
 const HomePage = () => {
   const { elementRef: aboutmeRef, style: aboutmeStyle } = useFadeInOnScroll({ fade: true, move: true });
@@ -18,7 +23,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <main className="pt-20">
+      <main className="sm:pt-12 pt-28">
         <div className="flex flex-wrap justify-center items-center w-[100vw] h-[100vh]">
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[300px] border-1" />
@@ -34,37 +39,37 @@ const HomePage = () => {
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               Laguage/Library/Flamework
             </div>
-            <div className='flex flex-wrap justify-between sm:w-[480px] w-[240px] sm:h-[300px] h-[150px]'>
-              <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-wrap justify-between sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] mt-12'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={htmlIcon} alt="html icon" className='sm:w-[100px] w-[50px]' />
                 <div>HTML</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={cssIcon} alt="css icon"  className='sm:w-[100px] w-[50px]' />
                 <div>CSS</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={jsIcon} alt="js icon"  className='sm:w-[100px] w-[50px]' />
                 <div>Javascript</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={reactIcon} alt="react icon"  className='sm:w-[100px] w-[50px]' />
                 <div>React.js</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={reduxIcon} alt="redux icon"  className='sm:w-[100px] w-[50px]' />
                 <div>Redux</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={reactqueryIcon} alt="reactquery icon"  className='sm:w-[100px] w-[50px] sm:h-[100px] h-[50px]' />
                 <div>React-Query</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={tailwindIcon} alt="tailwind icon"  className='sm:w-[100px] w-[50px]' />
                 <div>Tailwind CSS</div>
               </div>
-              <div className='flex flex-col items-center justify-center'>
-                <img src={bootstrapIcon} alt="bootstrap icon" width={100} />
+              <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
+                <img src={bootstrapIcon} alt="bootstrap icon" width={100} className='sm:w-[100px] w-[50px]' />
                 <div>Bootstrap</div>
               </div>
             </div>
