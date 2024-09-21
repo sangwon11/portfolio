@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <div>
       <main className="sm:pt-12 pt-28">
-        <div className="flex flex-wrap justify-center items-center w-[100vw] h-[100vh]">
+        <div id='about-me' className="flex flex-wrap justify-center items-center w-[100vw] h-[100vh]">
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[300px] border-1" />
           </div>
@@ -81,6 +81,7 @@ const HomePage = () => {
         </div>
 
         <div
+          id='project'
           ref={projectRef}
           style={projectStyle}
         >
@@ -88,6 +89,7 @@ const HomePage = () => {
         </div>
 
         <div
+          id='contact'
           ref={contactRef}
           style={contactStyle}
         >
