@@ -28,7 +28,7 @@ const HomePage = () => {
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[300px] border-1" />
           </div>
-          <div ref={aboutmeRef} style={aboutmeStyle} className="sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] pt-[50px] pl-[40px]">
+          <div ref={aboutmeRef} style={aboutmeStyle} className="flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
@@ -39,7 +39,7 @@ const HomePage = () => {
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               Laguage/Library/Flamework
             </div>
-            <div className='flex flex-wrap justify-between sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] mt-12'>
+            <div className='flex flex-wrap justify-between sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] sm:mt-12 mt-[10px]'>
               <div className='flex flex-col items-center justify-center sm:w-[100px] w-[50px]'>
                 <img src={htmlIcon} alt="html icon" className='sm:w-[100px] w-[50px]' />
                 <div>HTML</div>
