@@ -11,7 +11,7 @@ const Contact = () => {
         <div>dbstkd@gmail.com</div>
       </div>
       <div className='flex flex-col items-center'>
-        <a className='flex flex-col items-center' href='https://github.com/sangwon11'>
+        <a className='flex flex-col items-center' href='https://github.com/sangwon11'  target='_blank'>
           <img src={githubIcon} width={100}></img>
           <div>GitHub</div>
         </a>
