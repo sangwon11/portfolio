@@ -34,9 +34,6 @@ const HomePage = () => {
               <div>프론트엔드 개발자 윤상원입니다.</div>
             </div>
             <div className="sm:text-[30px] text-[15px] font-extrabold">
-              Skills
-            </div>
-            <div className="sm:text-[30px] text-[15px] font-extrabold">
               Laguage/Library/Flamework
             </div>
             <div className='flex flex-wrap justify-between sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] sm:mt-12 mt-[10px]'>
