@@ -36,40 +36,40 @@ const HomePage = () => {
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               Laguage/Library/Flamework
             </div>
-            <div className='flex flex-col justify-start sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] sm:mt-12 mt-[10px]'>
-              <div className='flex items-center justify-center w-[50px]'>
+            <div className='flex flex-col justify-center sm:w-[480px] w-[240px] sm:h-[300px] h-[150px] sm:mt-12 mt-[10px]'>
+              <div className='flex items-center w-[200px]'>
                 <img src={htmlIcon} alt="html icon" className='w-[30px]' />
                 <div>HTML</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
+              <div className='flex items-center w-[200px]'>
                 <img src={cssIcon} alt="css icon"  className='w-[30px]' />
                 <div>CSS</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
+              <div className='flex items-center w-[200px]'>
                 <img src={jsIcon} alt="js icon"  className='w-[30px]' />
                 <div className='sm:block hidden'>Javascript</div>
                 <div className='sm:hidden block'>JS</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
+              <div className='flex items-center w-[200px]'>
                 <img src={reactIcon} alt="react icon"  className='w-[30px]' />
                 <div>React.js</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
+              <div className='flex items-center w-[200px]'>
                 <img src={reduxIcon} alt="redux icon"  className='w-[30px]' />
                 <div>Redux</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
-                <img src={reactqueryIcon} alt="reactquery icon"  className='w-[30px] sm:h-[100px] h-[50px]' />
+              <div className='flex items-center w-[200px]'>
+                <img src={reactqueryIcon} alt="reactquery icon"  className='w-[30px] h-[30px]' />
                 <div className='sm:block hidden'>React-Query</div>
                 <div className='sm:hidden block'>R-Q</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
-                <img src={tailwindIcon} alt="tailwind icon"  className='w-[30px]' />
+              <div className='flex items-center w-[200px]'>
+                <img src={tailwindIcon} alt="tailwind icon" height={30}  className='w-[30px] h-[30px]' />
                 <div className='sm:block hidden'>Tailwind CSS</div>
                 <div className='sm:hidden block'>Tailwind</div>
               </div>
-              <div className='flex items-center justify-center w-[50px]'>
-                <img src={bootstrapIcon} alt="bootstrap icon" width={100} className='w-[30px]' />
+              <div className='flex items-center w-[200px]'>
+                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
                 <div className='sm:block hidden'>Bootstrap</div>
                 <div className='sm:hidden block'>B.S</div>
               </div>
