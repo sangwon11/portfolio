@@ -32,7 +32,7 @@ const HomePage = () => {
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
-              <div>소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개</div>
+              <div></div>
             </div>
             <div className='flex flex-wrap justify-start w-full h-[300px]'>
               <div className=' flex flex-col items-start justify-around w-full'>
