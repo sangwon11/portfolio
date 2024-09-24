@@ -40,49 +40,49 @@ const HomePage = () => {
                   Laguage
                 </div>
                 <div className='flex justify-around w-full'>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
                     <img src={htmlIcon} alt="html icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>HTML</div>
                   </div>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-blue-600 transition-transform duration-300'>
                     <img src={cssIcon} alt="css icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>CSS</div>
                   </div>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-yellow-300 transition-transform duration-300'>
                     <img src={jsIcon} alt="js icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>Javascript</div>
                   </div>
                 </div>
               </div>
-              <div className=' flex flex-col items-start justify-around w-full border-yellow-400'>
+              <div className=' flex flex-col items-start justify-around w-full'>
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Library
                 </div>
                 <div className='flex justify-around w-full'>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <img src={reactIcon} alt="react icon" className='w-[30px]' />
                     <div className='font-extrabold text-[20px]'>React.js</div>
                   </div>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-purple-400 transition-transform duration-300'>
                     <img src={reduxIcon} alt="redux icon" className='w-[30px]' />
                     <div className='font-extrabold text-[20px]'>Redux</div>
                   </div>
-                  <div className='flex items-start h-[30px] border-2'>
+                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
                     <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
                     <div className='font-extrabold text-[20px]'>React-Query</div>
                   </div>
                 </div>
               </div>
-              <div className=' flex flex-col items-start justify-around w-full border-yellow-400'>
+              <div className='flex flex-col items-start justify-around w-full'>
               <div className="sm:text-[30px] text-[15px] font-extrabold">
                 Framework
               </div>
               <div className='flex justify-around w-full'>
-              <div className='flex items-start h-[30px] border-2'>
+              <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                 <img src={tailwindIcon} alt="tailwind icon" height={30}  className='w-[30px] h-[30px]' />
                 <div className='font-extrabold text-[20px]'>Tailwind CSS</div>
               </div>
-              <div className='flex items-start h-[30px] border-2'>
+              <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-purple-500 transition-transform duration-300'>
                 <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
                 <div className='font-extrabold text-[20px]'>Bootstrap</div>
               </div>

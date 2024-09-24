@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import DarkModeToggle from '../components/DarkModeToggle';
 
 const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,9 +14,9 @@ const NavBar = () => {
           <Link to="project" smooth={true} duration={200} className="cursor-pointer z-10">Project</Link>
           <Link to="contact" smooth={true} duration={200} className="cursor-pointer z-10">Contact</Link>
         </div>
-        <button onClick={() => setDarkMode(!darkMode)} className="p-2 m-2 bg-gray-300 dark:bg-gray-600 rounded transition-colors duration-500">
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
+        <div className='sm:pr-[30px] pr-[0]'>
+        <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
       </div>
       <div className="pt-[100px] bg-white dark:bg-gray-900 dark:text-white min-h-full transition-colors duration-500">
         <Outlet />
