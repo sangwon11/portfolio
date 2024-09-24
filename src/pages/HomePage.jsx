@@ -28,39 +28,56 @@ const HomePage = () => {
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>
-          <div ref={aboutmeRef} style={aboutmeStyle} className="border-2 flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
+          <div ref={aboutmeRef} style={aboutmeStyle} className=" flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
+              <div>소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개</div>
             </div>
-            <div className='flex flex-wrap justify-start sm:w-[400px] w-[240px] sm:h-[300px] h-[300px] border-2'>
+            <div className='flex flex-wrap justify-start w-full h-[300px]'>
+              <div className=' flex flex-col items-start justify-around w-full'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold">
+                  Laguage
+                </div>
+                <div className='flex justify-around w-full'>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={htmlIcon} alt="html icon" className='w-[30px]'/>
+                    <div className='font-extrabold text-[20px]'>HTML</div>
+                  </div>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={cssIcon} alt="css icon" className='w-[30px]'/>
+                    <div className='font-extrabold text-[20px]'>CSS</div>
+                  </div>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={jsIcon} alt="js icon" className='w-[30px]'/>
+                    <div className='font-extrabold text-[20px]'>Javascript</div>
+                  </div>
+                </div>
+              </div>
+              <div className=' flex flex-col items-start justify-around w-full border-yellow-400'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold">
+                  Library
+                </div>
+                <div className='flex justify-around w-full'>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={reactIcon} alt="react icon" className='w-[30px]' />
+                    <div className='font-extrabold text-[20px]'>React.js</div>
+                  </div>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={reduxIcon} alt="redux icon" className='w-[30px]' />
+                    <div className='font-extrabold text-[20px]'>Redux</div>
+                  </div>
+                  <div className='flex items-start h-[30px] border-2'>
+                    <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
+                    <div className='font-extrabold text-[20px]'>React-Query</div>
+                  </div>
+                </div>
+              </div>
+              <div className=' flex flex-col items-start justify-around w-full border-yellow-400'>
               <div className="sm:text-[30px] text-[15px] font-extrabold">
-                Laguage/Library/Flamework
+                Framework
               </div>
-              <div className='flex items-start h-[30px] border-2'>
-                <img src={htmlIcon} alt="html icon" className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>HTML</div>
-              </div>
-              <div className='flex items-start h-[30px] border-2'>
-                <img src={cssIcon} alt="css icon"  className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>CSS</div>
-              </div>
-              <div className='flex items-start h-[30px]  border-2'>
-                <img src={jsIcon} alt="js icon"  className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Javascript</div>
-              </div>
-              <div className='flex items-start h-[30px] border-2'>
-                <img src={reactIcon} alt="react icon"  className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>React.js</div>
-              </div>
-              <div className='flex items-start h-[30px] border-2'>
-                <img src={reduxIcon} alt="redux icon"  className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Redux</div>
-              </div>
-              <div className='flex items-start h-[30px] border-2'>
-                <img src={reactqueryIcon} alt="reactquery icon"  className='w-[30px] h-[30px]' />
-                <div className='font-extrabold text-[20px]'>React-Query</div>
-              </div>
+              <div className='flex justify-around w-full'>
               <div className='flex items-start h-[30px] border-2'>
                 <img src={tailwindIcon} alt="tailwind icon" height={30}  className='w-[30px] h-[30px]' />
                 <div className='font-extrabold text-[20px]'>Tailwind CSS</div>
@@ -68,6 +85,8 @@ const HomePage = () => {
               <div className='flex items-start h-[30px] border-2'>
                 <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
                 <div className='font-extrabold text-[20px]'>Bootstrap</div>
+              </div>
+              </div>
               </div>
             </div>
           </div>
