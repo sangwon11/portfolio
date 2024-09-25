@@ -17,7 +17,16 @@ import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
 */
 
 const HomePage = () => {
-  const { elementRef: aboutmeRef, style: aboutmeStyle } = useFadeInOnScroll({ fade: true, move: true });
+  const { elementRef: textRef, style: textStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 0 });
+  const { elementRef: skillRef, style: skillStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 1000 });
+  const { elementRef: htmlRef, style: htmlStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 2000 });
+  const { elementRef: cssRef, style: cssStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 4000 });
+  const { elementRef: jsRef, style: jsStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 6000 });
+  const { elementRef: reactRef, style: reactStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 8000 });
+  const { elementRef: reduxRef, style: reduxStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 10000 });
+  const { elementRef: queryRef, style: queryStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 12000 });
+  const { elementRef: tailwindRef, style: tailwindStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 14000 });
+  const { elementRef: bootstrapRef, style: bootstrapStyle } = useFadeInOnScroll({ fade: true, move: true, delay: 16000 });
   const { elementRef: projectRef, style: projectStyle } = useFadeInOnScroll({ fade: true, move: false });
   const { elementRef: contactRef, style: contactStyle } = useFadeInOnScroll({ fade: true, move: false });
 
@@ -28,23 +37,23 @@ const HomePage = () => {
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>
-          <div ref={aboutmeRef} style={aboutmeStyle} className=" flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
+          <div ref={textRef} style={textStyle} className=" flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
             <div className="sm:text-[30px] text-[15px] font-extrabold">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
               <div></div>
             </div>
-            <div className='flex flex-wrap justify-start w-full h-[300px]'>
+            <div ref={skillRef} style={skillStyle}  className='flex flex-wrap justify-start w-full h-[300px]'>
               <div className=' flex flex-col items-start justify-around w-full'>
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Laguage
                 </div>
                 <div className='flex justify-around w-full'>
-                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
+                  <div ref={htmlRef} style={htmlStyle}  className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
                     <img src={htmlIcon} alt="html icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>HTML</div>
                   </div>
-                  <div className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-blue-600 transition-transform duration-300'>
+                  <div ref={cssRef} style={cssStyle}  className='flex items-start h-[30px] rounded-sm hover:scale-125 hover:bg-blue-600 transition-transform duration-300'>
                     <img src={cssIcon} alt="css icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>CSS</div>
                   </div>
