@@ -28,8 +28,8 @@ const HomePage = () => {
 
   return (
     <div>
-      <main className="sm:pt-12 pt-28">
-        <div id='about-me' className="flex flex-wrap justify-center items-center w-[100vw]">
+      <main className="border-2 border-blue-700">
+        <div id='about-me' className="sm:pt-[100px] pt-[50px] flex flex-wrap justify-center items-center w-[100vw]">
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>
