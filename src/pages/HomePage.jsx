@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div>
       <main className="border-2 border-blue-700">
-        <div id='about-me' className="sm:pt-[100px] pt-[50px] flex flex-wrap justify-center items-center w-[100vw]">
+        <div id='about-me' className="pt-[40px] flex flex-wrap justify-center items-center w-[100vw]">
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>

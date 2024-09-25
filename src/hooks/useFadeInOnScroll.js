@@ -10,6 +10,8 @@ const useFadeInOnScroll = ({ fade = true, move = true, delay = 0 } = {}) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsInView(true);
+          } else {
+            setIsInView(false);
           }
         });
       },
