@@ -15,7 +15,7 @@ const useFadeInOnScroll = ({ fade = true, move = true, delay = 0 } = {}) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     if (elementRef.current) {
