@@ -45,19 +45,19 @@ const HomePage = () => {
                 </div>
                 <div className='flex justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
-                    <div ref={htmlRef} style={htmlStyle} className='flex items-start h-[30px]'>
+                    <div ref={htmlRef} style={htmlStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={htmlIcon} alt="html icon" className='w-[30px]' />
                       <div className='font-extrabold text-[20px]'>HTML</div>
                     </div>
                   </div>
                   <div className='rounded-sm hover:scale-125  hover:bg-blue-600 transition-transform duration-300'>
-                  <div ref={cssRef} style={cssStyle} className='flex items-start h-[30px]'>
+                  <div ref={cssRef} style={cssStyle} className='flex items-start h-[30px] pr-1'>
                     <img src={cssIcon} alt="css icon" className='w-[30px]'/>
                     <div className='font-extrabold text-[20px]'>CSS</div>
                   </div>
                   </div>
                   <div className='rounded-sm hover:scale-125 hover:bg-yellow-300 transition-transform duration-300'>
-                    <div ref={jsRef} style={jsStyle} className='flex items-start h-[30px]'>
+                    <div ref={jsRef} style={jsStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={jsIcon} alt="js icon" className='w-[30px]' />
                       <div className='font-extrabold text-[20px]'>Javascript</div>
                     </div>
@@ -70,19 +70,19 @@ const HomePage = () => {
                 </div>
                 <div className='flex justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
-                    <div ref={reactRef} style={reactStyle} className='flex items-start h-[30px]'>
+                    <div ref={reactRef} style={reactStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={reactIcon} alt="react icon" className='w-[30px]' />
                       <div className='font-extrabold text-[20px]'>React.js</div>
                     </div>
                   </div>
                   <div className='rounded-sm hover:scale-125 hover:bg-purple-400 transition-transform duration-300'>
-                    <div ref={reduxRef} style={reduxStyle} className='flex items-start h-[30px]'>
+                    <div ref={reduxRef} style={reduxStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={reduxIcon} alt="redux icon" className='w-[30px]' />
                       <div className='font-extrabold text-[20px]'>Redux</div>
                     </div>
                   </div>
                   <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
-                    <div ref={queryRef} style={queryStyle} className='flex items-start h-[30px]'>
+                    <div ref={queryRef} style={queryStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
                       <div className='font-extrabold text-[20px]'>React-Query</div>
                     </div>
@@ -95,13 +95,13 @@ const HomePage = () => {
               </div>
               <div className='flex justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
-                    <div ref={tailwindRef} style={tailwindStyle} className='flex items-start h-[30px]'>
+                    <div ref={tailwindRef} style={tailwindStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={tailwindIcon} alt="tailwind icon" height={30} className='w-[30px] h-[30px]' />
                       <div className='font-extrabold text-[20px]'>Tailwind CSS</div>
                     </div>
                   </div>
                   <div className='rounded-sm hover:scale-125 hover:bg-purple-500 transition-transform duration-300'>
-                    <div ref={bootstrapRef} style={bootstrapStyle} className='flex items-start h-[30px]'>
+                    <div ref={bootstrapRef} style={bootstrapStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
                       <div className='font-extrabold text-[20px]'>Bootstrap</div>
                     </div>
