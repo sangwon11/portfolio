@@ -43,7 +43,7 @@ const HomePage = () => {
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Language
                 </div>
-                <div className='flex justify-around w-full'>
+                <div className='flex sm:flex-row flex-col justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
                     <div ref={htmlRef} style={htmlStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={htmlIcon} alt="html icon" className='w-[30px]' />
@@ -68,7 +68,7 @@ const HomePage = () => {
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Library
                 </div>
-                <div className='flex justify-around w-full'>
+                <div className='flex sm:flex-row flex-col justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <div ref={reactRef} style={reactStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={reactIcon} alt="react icon" className='w-[30px]' />
@@ -93,7 +93,7 @@ const HomePage = () => {
               <div className="sm:text-[30px] text-[15px] font-extrabold">
                 Framework
               </div>
-              <div className='flex justify-around w-full'>
+              <div className='flex sm:flex-row flex-col justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <div ref={tailwindRef} style={tailwindStyle} className='flex items-start h-[30px] pr-1'>
                       <img src={tailwindIcon} alt="tailwind icon" height={30} className='w-[30px] h-[30px]' />
