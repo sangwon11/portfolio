@@ -28,7 +28,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <main className="border-2 border-blue-700">
+      <main className="">
         <div id='about-me' className="pt-[100px] flex flex-wrap justify-center items-center w-[100vw]">
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
@@ -71,7 +71,7 @@ const HomePage = () => {
                 <div className='flex sm:flex-row flex-col justify-around w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <div ref={reactRef} style={reactStyle} className='flex items-start h-[30px] pr-1'>
-                      <img src={reactIcon} alt="react icon" className='w-[30px]' />
+                      <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
                       <div className='font-extrabold text-[20px]'>React.js</div>
                     </div>
                   </div>
