@@ -8,7 +8,7 @@ const Contact = () => {
       <div className='flex flex-col items-center justify-center mt-24 mb-32'>
         <img src={emailIcon} width={100}></img>
         <div>Mail</div>
-        <div>dbstkd@gmail.com</div>
+        <div>asmytj75@gmail.com</div>
       </div>
       <div className='flex flex-col items-center'>
         <a className='flex flex-col items-center' href='https://github.com/sangwon11'  target='_blank'>
