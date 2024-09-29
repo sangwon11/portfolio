@@ -7,16 +7,17 @@ import reduxIcon from '../assets/icons/reduxIcon.svg';
 import reactqueryIcon from '../assets/icons/reactqueryIcon.svg';
 import tailwindIcon from '../assets/icons/tailwindIcon.svg';
 import bootstrapIcon from '../assets/icons/bootstrapIcon.svg';
-
+/*<div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>*/
+/*<div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>*/
 const Project = () => {
   return (
-    <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[300vh] border-2 border-amber-800'>
+    <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[500vh] border-2 border-amber-800'>
       <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
         Projects
       </div>
       <div className=' sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
         <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
+          <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
             </a>
@@ -43,8 +44,8 @@ const Project = () => {
         </div>
 
         {/* Flugel Project */}
-        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://fluegel.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#25252b] rounded-xl text-[#d6ed0e] text-center border-2 transition-opacity duration-500'>
               Flugel
             </a>
@@ -64,14 +65,15 @@ const Project = () => {
               </div>
             </div>
             <div className='text-[17px]'>
-              json server를 이용한 쇼핑몰 사이트입니다. db.json에 직접 데이터를 만들어 호출하는 방식을 사용했습니다. 리액트 훅을 이용하여 로그인, 로그아웃 기능을 구현했습니다.
+              json server를 이용한 쇼핑몰 사이트입니다. db.json에 직접 데이터를 만들어 호출하는 방식을 사용했습니다.
+              리액트 훅을 이용하여 로그인, 로그아웃 기능을 구현했습니다. 여러 쇼핑몰 사이트를 참고하면서 디자인 및 기능을 수현 했습니다.
             </div>
           </div>
         </div>
 
         {/* Paradox Project */}
-        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://paradox1.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#000000] rounded-xl text-[#ed0000] text-center border-2 transition-opacity duration-500'>
               Paradox
             </a>
@@ -104,8 +106,8 @@ const Project = () => {
         </div>
 
         {/* Buddy Project */}
-        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://withbuddy.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#FF7336] rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Buddy
             </a>
