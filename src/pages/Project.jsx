@@ -14,25 +14,25 @@ const Project = () => {
       <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
         Projects
       </div>
-      <div className=' sm:w-[1300px] w-[350px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
+      <div className=' sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
         <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
+          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
             </a>
           </div>
-          <div className='flex flex-col w-[400px] h-[250px]'>
+          <div className='flex flex-col sm:w-[400px] w-[250px] h-[250px]'>
             <div className=''>
               Weather Vibe
             </div>
             <div className='flex border-b-2 border-black'>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
-                <div className='font-extrabold text-[20px]'>React.js</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Bootstrap</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
             <div className='text-[17px]'>
@@ -44,23 +44,23 @@ const Project = () => {
 
         {/* Flugel Project */}
         <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
+          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://fluegel.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#25252b] rounded-xl text-[#d6ed0e] text-center border-2 transition-opacity duration-500'>
               Flugel
             </a>
           </div>
-          <div className='flex flex-col w-[400px] h-[250px]'>
+          <div className='flex flex-col sm:w-[400px] w-[250px] h-[250px]'>
             <div className=''>
               Flugel
             </div>
             <div className='flex border-b-2 border-black'>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
-                <div className='font-extrabold text-[20px]'>React.js</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Bootstrap</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
             <div className='text-[17px]'>
@@ -71,27 +71,27 @@ const Project = () => {
 
         {/* Paradox Project */}
         <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
+          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://paradox1.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#000000] rounded-xl text-[#ed0000] text-center border-2 transition-opacity duration-500'>
               Paradox
             </a>
           </div>
-          <div className='flex flex-col w-[400px] h-[250px]'>
+          <div className='flex flex-col sm:w-[400px] w-[250px] h-[250px]'>
             <div className=''>
               Paradox
             </div>
             <div className='flex border-b-2 border-black'>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
-                <div className='font-extrabold text-[20px]'>React.js</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
-                <div className='font-extrabold text-[20px]'>React-Query</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React-Query</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Bootstrap</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
             <div className='text-[17px]'>
@@ -105,27 +105,27 @@ const Project = () => {
 
         {/* Buddy Project */}
         <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
+          <div className='group flex flex-col items-center justify-center mb-5 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://withbuddy.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#FF7336] rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Buddy
             </a>
           </div>
-          <div className='flex flex-col items-start w-[450px] h-[250px]'>
+          <div className='flex flex-col items-start sm:w-[450px] w-[250px] h-[250px]'>
             <div className=''>
               Buddy
             </div>
             <div className='flex border-b-2 border-black'>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
-                <div className='font-extrabold text-[20px]'>React.js</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
-                <div className='font-extrabold text-[20px]'>React-Query</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>React-Query</div>
               </div>
               <div className='flex items-start h-[30px] pr-1'>
                 <img src={tailwindIcon} alt="tailwind icon" className='w-[30px]' />
-                <div className='font-extrabold text-[20px]'>Tailwind CSS</div>
+                <div className='font-extrabold text-[20px] hidden sm:block'>Tailwind CSS</div>
               </div>
             </div>
             <div className='text-[17px]'>
