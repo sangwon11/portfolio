@@ -9,7 +9,7 @@ import tailwindIcon from '../assets/icons/tailwindIcon.svg';
 import bootstrapIcon from '../assets/icons/bootstrapIcon.svg';
 const Project = () => {
   return (
-    <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[400vh] border-2 border-amber-800'>
+    <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[400vh]'>
       <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
         Projects
       </div>
