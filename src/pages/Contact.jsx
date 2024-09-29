@@ -6,12 +6,12 @@ const Contact = () => {
   return (
     <div className='flex flex-col items-center justify-center w-[100vw] h-[100vh] text-[25px] font-extrabold'>
       <div className='text-[40px]'>Contact</div>
-      <div className='sm:w-[600px] w-[300px] flex sm:flex-row flex-col flex-wrap justify-between'>
-        <div className='flex flex-col items-center justify-center w-[270px]'>
+      <div className='mt-10 sm:w-screen w-[300px] flex sm:flex-row flex-col flex-wrap justify-center'>
+        <div className='flex flex-col items-center justify-center w-[300px]'>
           <img src={emailIcon} width={100} className='border-4 border-black rounded-xl dark:invert transition-all duration-500' ></img>
           <div>asmytj75@gmail.com</div>
         </div>
-        <div className='flex flex-col items-center w-[270px]'>
+        <div className='flex flex-col items-center w-[300px]'>
           <a className='flex flex-col items-center justify-center h-[175px]' href='https://github.com/sangwon11' target='_blank'>
             <img className='dark:invert transition-all duration-500' src={githubIcon} width={100}></img>
             <div>GitHub</div>
