@@ -7,8 +7,6 @@ import reduxIcon from '../assets/icons/reduxIcon.svg';
 import reactqueryIcon from '../assets/icons/reactqueryIcon.svg';
 import tailwindIcon from '../assets/icons/tailwindIcon.svg';
 import bootstrapIcon from '../assets/icons/bootstrapIcon.svg';
-/*<div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>*/
-/*<div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>*/
 const Project = () => {
   return (
     <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[400vh] border-2 border-amber-800'>
