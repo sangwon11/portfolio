@@ -10,18 +10,18 @@ import bootstrapIcon from '../assets/icons/bootstrapIcon.svg';
 
 const Project = () => {
   return (
-    <div className='flex flex-col justify-start items-center w-[100vw] h-[400vh] border-2 border-amber-800'>
-      <div className='w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
+    <div className='flex flex-col justify-start items-center w-[100vw] h-[200vh] border-2 border-amber-800'>
+      <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
         Projects
       </div>
-      <div className=' sm:w-[1100px] w-[350px] h-full flex flex-col items-center justify-around sm:text-[25px] text-[10px] font-extrabold border-2 border-violet-900'>
-        <div className='flex flex-row flex-wrap justify-around items-center sm:w-[1000px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center w-[500px] h-[250px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
+      <div className=' sm:w-[1300px] w-[350px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
+        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
             </a>
           </div>
-          <div className='flex flex-col w-[400px]'>
+          <div className='flex flex-col w-[400px] h-[250px]'>
             <div className=''>
               Weather Vibe
             </div>
@@ -43,13 +43,13 @@ const Project = () => {
         </div>
 
         {/* Flugel Project */}
-        <div className='flex flex-row flex-wrap justify-around items-center sm:w-[1000px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center w-[500px] h-[250px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-flugel-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://fluegel.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#25252b] rounded-xl text-[#d6ed0e] text-center border-2 transition-opacity duration-500'>
               Flugel
             </a>
           </div>
-          <div className='flex flex-col w-[400px]'>
+          <div className='flex flex-col w-[400px] h-[250px]'>
             <div className=''>
               Flugel
             </div>
@@ -70,13 +70,13 @@ const Project = () => {
         </div>
 
         {/* Paradox Project */}
-        <div className='flex flex-row flex-wrap justify-around items-center sm:w-[1000px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center w-[500px] h-[250px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://paradox1.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#000000] rounded-xl text-[#ed0000] text-center border-2 transition-opacity duration-500'>
               Paradox
             </a>
           </div>
-          <div className='flex flex-col w-[400px]'>
+          <div className='flex flex-col w-[400px] h-[250px]'>
             <div className=''>
               Paradox
             </div>
@@ -104,13 +104,13 @@ const Project = () => {
         </div>
 
         {/* Buddy Project */}
-        <div className='flex flex-row flex-wrap justify-around items-center sm:w-[1000px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center w-[500px] h-[250px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
+        <div className='flex flex-col justify-around items-center sm:w-[500px] w-[300px] h-[500px]'>
+          <div className='group flex flex-col items-center justify-center mb-5 w-[500px] h-[250px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://withbuddy.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#FF7336] rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Buddy
             </a>
           </div>
-          <div className='flex flex-col w-[450px]'>
+          <div className='flex flex-col items-start w-[450px] h-[250px]'>
             <div className=''>
               Buddy
             </div>
