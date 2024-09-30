@@ -4,7 +4,8 @@ import { Link } from 'react-scroll';
 import DarkModeToggle from '../components/DarkModeToggle';
 
 const NavBar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  // 기본 다크 모드가 true
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={`w-screen h-screen ${darkMode ? 'dark' : ''} transition-colors duration-500`}>
