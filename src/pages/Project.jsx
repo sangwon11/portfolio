@@ -25,12 +25,12 @@ const Project = () => {
               Weather Vibe
             </div>
             <div className='flex border-b-2 border-black'>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactIcon} alt="react icon" className='w-[20px] mr-1 rounded-full' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[20px] mr-1' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
@@ -53,12 +53,12 @@ const Project = () => {
               Flugel
             </div>
             <div className='flex border-b-2 border-black'>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactIcon} alt="react icon" className='w-[20px] mr-1 rounded-full' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[20px] mr-1' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
@@ -81,16 +81,16 @@ const Project = () => {
               Paradox
             </div>
             <div className='flex border-b-2 border-black'>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactIcon} alt="react icon" className='w-[20px] mr-1 rounded-full' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactqueryIcon} alt="reactquery icon" className='w-[20px] mr-1 h-[30px]' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React-Query</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={bootstrapIcon} alt="bootstrap icon" className='w-[20px] mr-1' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>Bootstrap</div>
               </div>
             </div>
@@ -115,16 +115,16 @@ const Project = () => {
               Buddy
             </div>
             <div className='flex border-b-2 border-black'>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactIcon} alt="react icon" className='w-[30px] rounded-full' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactIcon} alt="react icon" className='w-[20px] mr-2 rounded-full' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React.js</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={reactqueryIcon} alt="reactquery icon" className='w-[30px] h-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={reactqueryIcon} alt="reactquery icon" className='w-[20px] mr-2 h-[30px]' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>React-Query</div>
               </div>
-              <div className='flex items-start h-[30px] pr-1'>
-                <img src={tailwindIcon} alt="tailwind icon" className='w-[30px]' />
+              <div className='flex items-center h-[30px] pr-1'>
+                <img src={tailwindIcon} alt="tailwind icon" className='w-[20px] mr-2' />
                 <div className='font-extrabold text-[20px] hidden sm:block'>Tailwind CSS</div>
               </div>
             </div>
