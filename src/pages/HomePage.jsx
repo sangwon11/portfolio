@@ -33,17 +33,17 @@ const HomePage = () => {
           <div>
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>
-          <div ref={textRef} style={textStyle} className=" flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
-            <div className="sm:text-[30px] text-[15px] font-extrabold">
+          <div ref={textRef} style={textStyle} className="border-2 flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
+            <div className="border-2 sm:text-[30px] text-[15px] font-extrabold mb-20">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
             </div>
-            <div ref={skillRef} style={skillStyle} className='flex flex-wrap justify-start w-full h-[300px]'>
-              <div className=' flex flex-col items-start justify-around w-full'>
+            <div ref={skillRef} style={skillStyle} className='border-2 flex flex-wrap justify-start w-full h-[350px]'>
+              <div className='border-2 flex flex-col items-start justify-center w-full'>
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Language
                 </div>
-                <div className='flex sm:flex-row flex-col justify-around w-full'>
+                <div className='flex sm:flex-row flex-col justify-start w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
                     <div ref={htmlRef} style={htmlStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={htmlIcon} alt="html icon" className='w-[20px] mr-2' />
@@ -64,11 +64,11 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className=' flex flex-col items-start justify-around w-full'>
+              <div className='border-2 flex flex-col items-start justify-center w-full'>
                 <div className="sm:text-[30px] text-[15px] font-extrabold">
                   Library
                 </div>
-                <div className='flex sm:flex-row flex-col justify-around w-full'>
+                <div className='flex sm:flex-row flex-col justify-start w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <div ref={reactRef} style={reactStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={reactIcon} alt="react icon" className='w-[20px] rounded-full mr-2' />
@@ -89,11 +89,11 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col items-start justify-around w-full'>
-              <div className="sm:text-[30px] text-[15px] font-extrabold">
-                Framework
-              </div>
-              <div className='flex sm:flex-row flex-col justify-around w-full'>
+              <div className='border-2 flex flex-col items-start justify-center w-full'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold">
+                  Framework
+                </div>
+                <div className='flex sm:flex-row flex-col justify-start w-full'>
                   <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
                     <div ref={tailwindRef} style={tailwindStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={tailwindIcon} alt="tailwind icon" className='w-[20px] mr-2' />
