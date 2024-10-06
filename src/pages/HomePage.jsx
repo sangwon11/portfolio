@@ -34,23 +34,23 @@ const HomePage = () => {
             <img className="sm:w-[500px] w-[300px] sm:h-[610px] h-[400px] border-1" />
           </div>
           <div ref={textRef} style={textStyle} className="border-2 flex flex-col sm:items-start items-center sm:w-[500px] w-[300px] sm:h-[610px] h-[380px] sm:pt-[50px] pt-[10px] sm:pl-[40px] pl-[0]">
-            <div className="border-2 sm:text-[30px] text-[15px] font-extrabold mb-20">
+            <div className="sm:text-[30px] text-[15px] font-extrabold mb-20">
               <div>안녕하세요.</div>
               <div>프론트엔드 개발자 윤상원입니다.</div>
             </div>
-            <div ref={skillRef} style={skillStyle} className='border-2 flex flex-wrap justify-start w-full h-[350px]'>
-              <div className='border-2 flex flex-col items-start justify-center w-full'>
-                <div className="sm:text-[30px] text-[15px] font-extrabold">
+            <div ref={skillRef} style={skillStyle} className='flex flex-wrap justify-start w-full h-[350px]'>
+              <div className='flex flex-col items-start justify-center w-full'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold mb-4">
                   Language
                 </div>
                 <div className='flex sm:flex-row flex-col justify-start w-full'>
-                  <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300'>
+                  <div className='rounded-sm hover:scale-125 hover:bg-orange-600 transition-transform duration-300 mr-4'>
                     <div ref={htmlRef} style={htmlStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={htmlIcon} alt="html icon" className='w-[20px] mr-2' />
                       <div className='font-extrabold text-[20px]'>HTML</div>
                     </div>
                   </div>
-                  <div className='rounded-sm hover:scale-125  hover:bg-blue-600 transition-transform duration-300'>
+                  <div className='rounded-sm hover:scale-125  hover:bg-blue-600 transition-transform duration-300 mr-4'>
                   <div ref={cssRef} style={cssStyle} className='flex items-center h-[30px] pr-1'>
                     <img src={cssIcon} alt="css icon" className='w-[20px] mr-2'/>
                     <div className='font-extrabold text-[20px]'>CSS</div>
@@ -64,18 +64,18 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className='border-2 flex flex-col items-start justify-center w-full'>
-                <div className="sm:text-[30px] text-[15px] font-extrabold">
+              <div className='flex flex-col items-start justify-center w-full'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold mb-4">
                   Library
                 </div>
                 <div className='flex sm:flex-row flex-col justify-start w-full'>
-                  <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
+                  <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300 mr-4'>
                     <div ref={reactRef} style={reactStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={reactIcon} alt="react icon" className='w-[20px] rounded-full mr-2' />
                       <div className='font-extrabold text-[20px]'>React.js</div>
                     </div>
                   </div>
-                  <div className='rounded-sm hover:scale-125 hover:bg-purple-400 transition-transform duration-300'>
+                  <div className='rounded-sm hover:scale-125 hover:bg-purple-400 transition-transform duration-300 mr-4'>
                     <div ref={reduxRef} style={reduxStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={reduxIcon} alt="redux icon" className='w-[20px] mr-2' />
                       <div className='font-extrabold text-[20px]'>Redux</div>
@@ -89,12 +89,12 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className='border-2 flex flex-col items-start justify-center w-full'>
-                <div className="sm:text-[30px] text-[15px] font-extrabold">
+              <div className='flex flex-col items-start justify-center w-full'>
+                <div className="sm:text-[30px] text-[15px] font-extrabold mb-4">
                   Framework
                 </div>
                 <div className='flex sm:flex-row flex-col justify-start w-full'>
-                  <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300'>
+                  <div className='rounded-sm hover:scale-125 hover:bg-sky-300 transition-transform duration-300 mr-5'>
                     <div ref={tailwindRef} style={tailwindStyle} className='flex items-center h-[30px] pr-1'>
                       <img src={tailwindIcon} alt="tailwind icon" className='w-[20px] mr-2' />
                       <div className='font-extrabold text-[20px]'>Tailwind CSS</div>
