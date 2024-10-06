@@ -13,8 +13,8 @@ const Project = () => {
       <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
         Projects
       </div>
-      <div className=' sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
-        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+      <div className='sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
+        <div className=' flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
           <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
@@ -70,7 +70,7 @@ const Project = () => {
         </div>
 
         {/* Paradox Project */}
-        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+        <div className=' flex flex-col items-center sm:w-[500px] w-[300px] h-[700px]'>
           <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-paradox-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://paradox1.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#000000] rounded-xl text-[#ed0000] text-center border-2 transition-opacity duration-500'>
               Paradox
@@ -104,7 +104,7 @@ const Project = () => {
         </div>
 
         {/* Buddy Project */}
-        <div className='flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
+        <div className=' flex flex-col items-center sm:w-[500px] w-[300px] h-[700px]'>
           <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-buddy-img bg-cover shadow-2xl rounded-3xl'>
             <a href='https://withbuddy.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-[#FF7336] rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Buddy
