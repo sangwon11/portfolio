@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import htmlIcon from '../assets/icons/htmlIcon.svg';
 import cssIcon from '../assets/icons/cssIcon.svg';
 import jsIcon from '../assets/icons/jsIcon.svg';
@@ -7,7 +7,33 @@ import reduxIcon from '../assets/icons/reduxIcon.svg';
 import reactqueryIcon from '../assets/icons/reactqueryIcon.svg';
 import tailwindIcon from '../assets/icons/tailwindIcon.svg';
 import bootstrapIcon from '../assets/icons/bootstrapIcon.svg';
+
 const Project = () => {
+
+  const images = [
+    'bg-weatherVibe-img',
+    'bg-weatherVibe-img2',
+    'bg-weatherVibe-img3',
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [fade, setFade] = useState(false)
+
+  useEffect(() => {
+    let interval;
+    if (isHovered) {
+      interval = setInterval(() => {
+        setFade(true);
+        setTimeout(() => {
+          setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+          setFade(false);
+        }, 500)
+      }, 2500);
+    }
+    return () => clearInterval(interval);
+  }, [isHovered]);
+
   return (
     <div className='flex flex-col justify-start items-center w-[100vw] sm:h-[200vh] h-[400vh]'>
       <div className='mt-[100px] w-96 h-36 text-center text-[40px] font-extrabold flex justify-center items-center'>
@@ -15,7 +41,12 @@ const Project = () => {
       </div>
       <div className='sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
         <div className=' flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className='group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-weatherVibe-img bg-cover shadow-2xl rounded-3xl'>
+          <div className={`group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-cover shadow-2xl rounded-3xl ${images[currentImage]} transition-opacity duration-500 ${
+              fade ? 'opacity-0' : 'opacity-100'
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
             </a>
