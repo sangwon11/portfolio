@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import DarkModeToggle from '../components/DarkModeToggle';
+import CustomCursor from '../components/ CustomCursor';
 
 const NavBar = () => {
   // 기본 다크 모드가 true
@@ -25,6 +26,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+      <CustomCursor/>
       <div className="pt-[100px] bg-white dark:bg-gray-900 dark:text-white min-h-full transition-colors duration-500">
         <Outlet />
       </div>
