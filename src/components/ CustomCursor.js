@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const CustomCursor = () => {
-  useEffect(() => {
-    const cursor = document.getElementById('customCursor');
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
+  useEffect(() => {
     const moveCursor = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
+      setPosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -16,12 +16,34 @@ const CustomCursor = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const followCursor = () => {
+      setCursorPosition((prev) => {
+        const dx = position.x - prev.x;
+        const dy = position.y - prev.y;
+        return {
+          x: prev.x + dx * 0.1, // 부드러운 이동 효과
+          y: prev.y + dy * 0.1,
+        };
+      });
+
+      requestAnimationFrame(followCursor);
+    };
+
+    followCursor();
+  }, [position]);
+
   return (
     <div
       id="customCursor"
-      className="w-8 h-8 bg-blue-500 rounded-full fixed top-0 left-0 pointer-events-none transition-transform duration-200 ease-out transform scale-75"
+      style={{
+        left: `${cursorPosition.x}px`,
+        top: `${cursorPosition.y}px`,
+      }}
+      className="z-10 w-12 h-12 bg-white fixed pointer-events-none mix-blend-difference rounded-full transform -translate-x-1/2 -translate-y-1/2"
     ></div>
   );
 };
 
 export default CustomCursor;
+
