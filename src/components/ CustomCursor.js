@@ -22,8 +22,8 @@ const CustomCursor = () => {
         const dx = position.x - prev.x;
         const dy = position.y - prev.y;
         return {
-          x: prev.x + dx * 0.1, // 부드러운 이동 효과
-          y: prev.y + dy * 0.1,
+          x: prev.x + dx * 0.2, // 부드러운 이동 효과
+          y: prev.y + dy * 0.2,
         };
       });
 
