@@ -18,20 +18,15 @@ const Project = () => {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [fade, setFade] = useState(false)
 
   useEffect(() => {
     let interval;
     if (isHovered) {
       interval = setInterval(() => {
-        setFade(true);
-        setTimeout(() => {
-          setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-          setFade(false);
-        }, 500)
-      }, 2500);
+        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      }, 2500); // 3초마다 이미지 변경
     }
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // 호버 해제 시 슬라이드 멈춤
   }, [isHovered]);
 
   return (
@@ -41,11 +36,12 @@ const Project = () => {
       </div>
       <div className='sm:w-[1300px] w-[300px] h-full flex flex-row flex-wrap items-center justify-around sm:text-[25px] text-[10px] font-extrabold'>
         <div className=' flex flex-col items-center sm:w-[500px] w-[300px] h-[500px]'>
-          <div className={`group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-cover shadow-2xl rounded-3xl ${images[currentImage]} transition-opacity duration-500 ${
-              fade ? 'opacity-0' : 'opacity-100'
-            }`}
+          <div className={`group flex flex-col items-center justify-center sm:mb-5 mb-2 sm:w-[500px] w-[300px] sm:h-[250px] h-[150px] bg-cover shadow-2xl rounded-3xl ${images[currentImage]}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            style={{
+              transition: 'background-image 1s ease-in-out', // 배경 이미지 전환 애니메이션
+            }}
           >
             <a href='https://weather-vibe.netlify.app/' target='_blank' className='opacity-0 group-hover:opacity-100 flex justify-center items-center w-[250px] h-[50px] bg-weatherVibe-color rounded-xl text-[#fff] text-center border-2 transition-opacity duration-500'>
               Weather Vibe
